@@ -52,14 +52,6 @@ cd shadowscanner
 # Install dependencies
 sudo apt install gcc libcurl4-openssl-dev
 
-# USE METHOD 1
-# Use directly
-./subdomainscanner example.com usr/share/seclists/Discover/DNS/subdomains-top1million-110000.txt
-
-# USE METHOD 2
-# Compile
-gcc shadowscan.c -o subdomainscanner -lcurl
-
 # Tor setup for tool(Just do it once)
 sudo apt install tor -y
 sudo nano /etc/tor/torrc
@@ -72,6 +64,14 @@ sudo systemctl start tor
 sudo systemctl enable tor
 ```
 ```bash
+# USE METHOD 1
+# Use directly
+./subdomainscanner example.com usr/share/seclists/Discover/DNS/subdomains-top1million-110000.txt
+
+# USE METHOD 2
+# Compile
+gcc shadowscan.c -o subdomainscanner -lcurl
+
 # Run tool give domain and kali wordlist 
 ./subdomainscanner example.com usr/share/seclists/Discover/DNS/subdomains-top1million-110000.txt
 ```
