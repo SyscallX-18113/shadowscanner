@@ -47,12 +47,16 @@ INTRODUCTION : Subdoamin finding tool passively the main feature of this tool is
 ### Installation:
 ```bash
 # Clone repository
-https://github.com/bughunter-18118/Passive-Dns-Researcher.git
-cd Passive-Dns-Researcher
-
+https://github.com/SyscallX-18113/shadowscanner.git
+cd shadowscanner
 # Install dependencies
 sudo apt install gcc libcurl4-openssl-dev
 
+# USE METHOD 1
+# Use directly
+./subdomainscanner example.com usr/share/seclists/Discover/DNS/subdomains-top1million-110000.txt
+
+# USE METHOD 2
 # Compile
 gcc shadowscan.c -o subdomainscanner -lcurl
 
