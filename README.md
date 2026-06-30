@@ -47,7 +47,7 @@ INTRODUCTION : Subdoamin finding tool passively the main feature of this tool is
 ### Installation:
 ```bash
 # Clone repository
-https://github.com/SyscallX-18113/shadowscanner.git
+git clone https://github.com/SyscallX-18113/shadowscanner.git
 cd shadowscanner
 # Install dependencies
 sudo apt install gcc libcurl4-openssl-dev
